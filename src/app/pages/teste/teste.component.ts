@@ -3,17 +3,11 @@ import { LucideAngularModule } from 'lucide-angular';
 import { TerminalCardComponent } from '../../components/terminal-card/terminal-card.component';
 
 @Component({
-  selector: 'app-home',
+  selector: 'app-teste',
   imports: [LucideAngularModule, TerminalCardComponent],
-  templateUrl: './home.component.html',
-  styleUrl: './home.component.css'
+  templateUrl: './teste.component.html',
+  styleUrl: './teste.component.css'
 })
-export class HomeComponent {
-
-  namesIconsLucide = [
-    { icon: "Github" },
-    { icon: "Linkedin" },
-    { icon: "Mail" },
-  ]
+export class TesteComponent {
 
 }

@@ -1,0 +1,52 @@
+<section class="w-full h-screen flex justify-center items-center pt-10">
+
+  <div class="w-80 h-80 bg-blue-400/30 rounded-full blur-3xl animate-pulse mix-blend-screen absolute top-20 left-10"></div>
+  <div class="w-80 h-80 bg-purple-500/30 rounded-full blur-3xl animate-pulse mix-blend-screen absolute bottom-20 right-10"></div>
+
+  <div class="w-full h-screen flex flex-col justify-center p-10 gap-3 ">
+    <div class="flex flex-col gap-1">
+      <div class="bg-purple-500/30 p-[3px] w-44 text-center rounded-full">
+        <p class="text-purple-500 text-sm font-medium">Disponível para projetos</p>
+      </div>
+      <div class="text-6xl font-bold">
+        <h1 class="text-zinc-50">Olá, eu sou</h1>
+        <h1 class="text-purple-500">Arthur Sousa</h1>
+      </div>
+    </div>
+    <p class="text-[20px] w-96 font-medium text-zinc-400">Código limpo, sistemas sólidos e um bom café: a receita da retaguarda eficiente.</p>
+    <div class="flex my-4 gap-4">
+      <button class="flex justify-center items-center p-2 bg-purple-500 text-zinc-50 font-medium rounded-lg gap-2 cursor-pointer">
+        Ver projetos
+        <lucide-icon name="ArrowRight" class="scale-90"></lucide-icon>
+      </button>
+      <button class="flex justify-center items-center p-2 bg-black border border-zinc-700 font-medium text-zinc-50 rounded-lg cursor-pointer">
+        Entre em contato
+      </button>
+    </div>
+    <div class="flex gap-5">
+      @for (item of namesIconsLucide; track item){
+        <button class="text-zinc-300 scale-90 cursor-pointer">
+          <lucide-icon [name]="item.icon"></lucide-icon>
+        </button>
+      }
+    </div>
+  </div>
+
+  <div class="w-full h-screen flex flex-col justify-center items-center">
+    <div class="bg-zinc-800/80 p-2 rounded-lg relative left-56 top-14">
+      <lucide-icon name="Code" class="text-purple-500"></lucide-icon>
+    </div>
+    <div class="bg-zinc-800/80 p-2 rounded-lg relative right-60 top-50 float-smooth text-center">
+      <p class="text-red-400">&#123; Java &rbrace;</p>
+    </div>
+    <app-terminal-card></app-terminal-card>
+    <div class="bg-zinc-800/80 p-2 rounded-lg relative left-60 bottom-40">
+      <p class="text-emerald-400">&#123; Angular &rbrace;</p>
+    </div>
+    <div class="bg-zinc-800/80 p-2 rounded-lg relative right-56 bottom-14">
+      <lucide-icon name="User" class="text-emerald-500"></lucide-icon>
+    </div>
+  </div>
+</section>
+
+

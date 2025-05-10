@@ -1,0 +1,49 @@
+<div class="inset-0 bg-gradient-to-br from-zinc-800/50 to-zinc-900/50 w-[28rem] h-[30rem] border border-zinc-700/50 rounded-xl flex justify-center items-center shadow-xl">
+  <div class="bg-zinc-800 w-[24rem] h-[26rem] rounded-xl flex flex-col justify-end overflow-hidden shadow-lg z-10">
+    <div class="w-full h-8 p-2 flex justify- items-center">
+      <div class="flex gap-2">
+        @for (item of colorsBtn; track item){
+          <div class="w-4 h-4 rounded-full" [ngClass]="item.color"></div>
+        }
+      </div>
+      <p class="ml-20 text-zinc-400 text-sm">Developer.java</p>
+    </div> 
+    <div class="bg-zinc-900 w-[24rem] h-[24rem] rounded-b-xl p-5 font-sans">
+      <p class="text-zinc-600">//  Desenvolvedor Back-End</p>
+      <div class="mt-2">
+        <span class="text-purple-400">public class </span> <span class="text-emerald-500">Developer </span>
+        <span class="text-white">&#123;</span>
+      </div>
+      <div class="pl-4">
+        <span class="text-purple-400">public static void </span> <span class="text-emerald-500">main</span>
+        <span class="text-white">(String[ ] args) &#123;</span>
+        @for (item of textItems; track item) {
+          <div class="pl-4">
+            <span class="text-red-400">{{item.variable}}</span> <span class="text-white"> = </span>
+            <span class="text-yellow-200">{{item.atribute}}</span> <span class="text-white">;</span>
+          </div>
+        }
+        <div class="pl-4">
+          <span class="text-red-400">String</span> <span class="text-white">[ ]</span> <span class="text-red-400"> stacks</span> <span class="text-white"> = </span>
+          <span class="text-white">&#123;</span> 
+          @for (item of stackItems; track item) {
+            <span class="text-yellow-200">{{item.label}}</span> <span class="text-white">{{item.caracter}}</span> 
+          }
+          <span class="text-white">&rbrace;</span> 
+        </div>
+        <div class="pl-4">
+          <span class="text-red-400">String location</span> <span class="text-white"> = </span>
+          <span class="text-yellow-200">"São Paulo, Brasil"</span> <span class="text-white">;</span>
+        </div>
+        <div class="mt-2 pl-4">
+          <span class="text-purple-400">System</span> <span class="text-white">.</span>
+          <span class="text-emerald-500">out</span> <span class="text-white">.</span>
+          <span class="text-emerald-500">println</span> <span class="text-white">(</span>
+          <span class="text-yellow-200">"Seja bem vindo ao meu portfolio ☕"</span> <span class="text-white">);</span> <div class="w-1 h-[1rem] bg-purple-500 animate-pulse relative left-[6.5rem] bottom-[18px]"></div>
+        </div>
+        <span class="text-white">&rbrace;</span> 
+      </div>
+      <span class="text-white">&rbrace;</span> 
+    </div>
+  </div>
+</div>
