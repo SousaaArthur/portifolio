@@ -28,5 +28,4 @@ export class TerminalCardComponent {
     {label: '"Tailwind"', caracter: ""},
   ];
 
-
 }

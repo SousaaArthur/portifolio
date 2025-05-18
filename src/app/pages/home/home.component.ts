@@ -15,5 +15,4 @@ export class HomeComponent {
     { icon: "Linkedin" },
     { icon: "Mail" },
   ]
-
 }
